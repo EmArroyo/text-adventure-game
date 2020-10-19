@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="column">
+    <div id="intro-screen" class="intro-screen col text-center align-items-center justify-items-center">
+      <h1 class="game-title col">Escape the mansion</h1>
+      <h2 id="pressanykey" class="pressanykey col">Press any key to start</h2>
+      <div id="menu" class="col-8 offset-2">
+        <button class="menu-button" type="button" onclick="startGame()">Start Game</button>
+        <button class="menu-button" type="button" onclick="showInstructions()">Instructions</button>
+      </div>
+    </div>
+    <div id="instructions" class="instructions col-8 offset-2">
+      <p>The objective of the game is to escape the mansion. To do so, the 
+      player can navigate the different rooms and floors in the mansion, while 
+      picking up objects and talking to different characters in their journey. 
+      The only door to exit the mansion is guarded by the gatekeeper, who will 
+      request an item from the player in order to open the door. If the player 
+      hands over the wrong item, the game will end.</p>
+      <br>
+      <h3>Controls:</h3>
+      <p>The player can move between rooms by typing the directions he/she 
+      wishes to go. The options are:
+      <ul>
+        <li>Up</li>
+        <li>Down</li>
+        <li>North</li>
+        <li>South</li>
+        <li>East</li>
+        <li>West</li>
+      </ul>
+      Other actions available to the player are:
+      <ul>
+        <li>Talk. Use it in a room where there is another character to listen
+        to what they have to say.
+      </li>
+      <li>Pick-up. Use it to collect items in the different rooms.</li>
+      <li>Give. Use it to give an item to the gatekeeper. Your will be asked to 
+        confirm which item you want to hand over.
+      </li>
+      </ul>
+      </p>
+      <button class="menu-button" type="button" onclick="backToMenu()">Back to the menu</button>
+    </div>
+    <div id="text-section" class="col-8 offset-2 text-center">
+      <p id="textarea"></p>
+      <br />
+      <input id="usertext" type="text" />
+    </div>
+
+    <div id="map" class="col-8 offset-2 d-flex align-items-center justify-content-center">
+      <div id="topfloor" class="floor">
+        <div id="room1" class="single-room">Loft</div>
+      </div>
+      <div id="secondfloor" class="grid-container floor">
+        <div id="room-empty-1" class="grid-item room-empty"></div>
+        <div id="room3" class="grid-item room">Master Bedroom</div>
+        <div id="room-empty-1" class="grid-item room-empty"></div>
+        <div id="room6" class="grid-item room">Dining Room</div>
+        <div id="room2" class="grid-item room">Second Floor Lobby</div>
+        <div id="room4" class="grid-item room">Bathroom</div>
+        <div id="room-empty-1" class="grid-item room-empty"></div>
+        <div id="room5" class="grid-item room">Library</div>
+        <div id="room-empty-1" class="grid-item room-empty"></div>
+      </div>
+      <div id="firstfloor" class="floor">
+        <div id="room-empty-1" class="grid-item room-empty"></div>
+        <div id="room8" class="room">Kitchen</div>
+        <div id="room-empty-1" class="grid-item room-empty"></div>
+        <div id="room11" class="room">Study</div>
+        <div id="room7" class="room">First Floor Lobby</div>
+        <div id="room9" class="room">Utility Room</div>
+        <div id="room-empty-1" class="grid-item room-empty"></div>
+        <div id="room10" class="room">Airing cupboard</div>
+        <div id="room-empty-1" class="grid-item room-empty"></div>
+      </div>
+      <div id="groundfloor" class="floor">
+        <div id="room12" class="single-room">Entrance hall</div>
+      </div>
+    </div>
+
+    <div id="win-screen" class="intro-screen col text-center align-items-center justify-items-center">
+      <h1 class="game-title col">Congratulations!!! <br>You managed to escape the mansion</h1>
+    </div>
+
+    <div id="gameover-screen" class="intro-screen col text-center align-items-center justify-items-center">
+      <h1 class="game-title col">Game over!! <br>You weren't able to escape the mansion</h1>
+      <button class="menu-button" type="button" onclick="location.reload()">Try again</button>
+
+    </div>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </div>
+</div>
+  </body>
+</html>

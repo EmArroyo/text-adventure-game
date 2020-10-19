@@ -1,0 +1,131 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "ARCADECLASSIC";
+}
+@font-face {
+  font-family: "ARCADECLASSIC";
+  src: url("arcadeclassic/ARCADECLASSIC.TTF");
+}
+
+#intro-screen {
+  width: 100%;
+  height: 100%;
+}
+
+#win-screen {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+#gameover-screen {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.game-title {
+  font-size: 20vh;
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.pressanykey {
+  animation-name: pulse;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#menu {
+  display: none;
+}
+
+#instructions {
+  display: none;
+  padding: 0.5vh;
+  font-size: 2vh;
+}
+
+.menu-button {
+  background-color: white;
+  color: black;
+  border-style: none;
+  font-size: 4vh;
+  width: 100%;
+  height: auto;
+  margin: 0.5vh;
+}
+
+#text-section {
+  display: none;
+  width: 100%;
+  height: auto;
+  font-size: 4vh;
+}
+
+#textarea {
+  height: 10vh;
+}
+
+#usertext {
+  display: none;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#map {
+  width: 100%;
+}
+
+.floor {
+  width: fit-content;
+  height: fit-content;
+  display: none;
+  grid-template-columns: auto auto auto;
+  margin: 5vh;
+}
+
+.single-room {
+  width: 30vw;
+  height: 30vw;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2vh;
+  font-size: xx-large;
+  color: black;
+}
+
+.room {
+  background-color: white;
+  border-radius: 5px;
+  width: 10vw;
+  height: 10vw;
+  display: inline-block;
+  text-align: center;
+  margin: 0.1em;
+  font-size: 3vh;
+  color: black;
+}
+
+.room-empty {
+  margin: 0.1em;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  text-align: center;
+  text-justify: center;
+}

@@ -1,0 +1,27 @@
+OOP ADVENTURE GAME
+
+The character starts at the top of a tower, in an empty room with nothing in it but a backpack. The player collects the backpack which has the ability to store items found in other rooms of the tower.
+
+Upon exiting the room by going down the staircase, the player finds itself in a lobby type of room, with a locked door to the stairs going down and four doors, one in each of the cardinal directions:
+
+	- North: This room is a green bedroom. There is a bed, an armchair, a window and a fire. There is a mug on the bed and a candle on the window sill.
+	- East: This is a bathroom. There is a bathtub, a sink and a toilet. On the sink there is a towel that the player can pickup.
+	- South: This is a library. There is an armchair by the fire and a small coffee table by it. On the coffee table there is a small red key and a book.
+	- West: This is a dining room. In the middle of the room there is a long table, flanked by 6 chairs on each side. On top of the table there is a vase with some flowers in it. There is a maid in it that will let the player know "The front door can be drafty in windy days like today".
+
+To continue downstairs, the player must be in posession of the small red key.
+
+Once downstairs, the player finds itself in a lobby type of room again, door to the stairs locked and four more rooms, one to each of the cardinal directions:
+
+	- North: This room is a kitchen. There is plenty of food on the counter, as if someone was planning to cook a meal for a gathering. Next to the stove there is a cheese sandwich and a teapot. The cook is standing in it and will tell the player "The gatekeeper has not had his lunch."
+	- East: This is a utility room. There is a strange black lever on one of the shelfs.
+	- South: This is an airing cupboard. There is a thick blanket and a pair of boots.
+	- West: This is a study room. There are bookshelves to the right hand side and a big desk under the window. On the desk, there is a small blue key. There is a little boy that will tell the player "Stading by that door all day and night must be really boring. If it was me, I'd spend the day reading."
+
+To continue downstairs, the player must be in posession of the small blue key.
+
+Once downstairs, the player finds itself in a big entrance room, only one door can be seen and the gatekeeper is standing next to it. The gatekeeper will inform the player that to leave the house he/she must satisfy his demands and proceed to release a random statement of a set of three:
+
+	- I am cold. Give blanket and boots.
+	- I am hungry. Give cheese sandwich, mug and teapot.
+	- I am bored. Give book and candle.
